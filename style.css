@@ -85,3 +85,10 @@ float: right; }
 #summary {
   clear: both;
 }
+
+.footer{
+  float: left;
+}
+.footer2 {
+  float: right;
+}
