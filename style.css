@@ -12,45 +12,48 @@
   background-position: 8px -310px;
 }
 
-body{
- font-family: arial, helvetica, san-serif; 
+body {
+  font-family: arial, helvetica, san-serif;
 }
-.cast{
+
+.cast {
   height: 300px;
   width: 300px;
   border: solid black 3px;
 }
 
-.right{
+.right {
   float: right;
 }
 
-.middle{
+.middle {
   width: 50%;
   margin: auto;
   text-align: center;
 }
+
 .info {
   margin: auto;
   text-align: center;
 }
+
 .footer2 {
   float: right;
 }
 
-.left{
+.left {
   float: left;
 }
 
-table{
+table {
   margin: auto;
 }
 
-h1{
-  text-align: center; 
+h1 {
+  text-align: center;
 }
 
-h2{
+h2 {
   text-align: center;
 }
 
@@ -65,30 +68,31 @@ a {
   color: white;
 }
 
-#t1{
+#t1 {
   float: left;
   border: solid black 3px;
 }
 
-form{
+form {
   text-align: center;
 }
-
 
 #poster {
   float: left;
 }
-#head { 
-float: right; }
 
+#head {
+  float: right;
+}
 
 #summary {
   clear: both;
 }
 
-.footer{
+.footer {
   float: left;
 }
+
 .footer2 {
   float: right;
 }
