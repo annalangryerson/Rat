@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<div class="header">
+<h1>Ratatoullie The Movie</h1>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="tiktok.html">Tik Toks</a></li>
+  <li><a href="movie.html">Movie</a></li>
+  <li><a href="application.html">Apply Here</a></li>
+
+</ul>
+
+</div>
+<h2> Ratatoullie The Movie</h2>
+
+<div id="poster">
+	<img src= "Ratatouille Poster.jpg"/ width="500">
+
+</div>
+
+<div id="head">
+<div id="rating">
+		<img id="star" src= "staricon.png"/ width="100">
+		<h3>8/10</h3>
+		<img id="stats" src= "stats.png"/ width="100">
+		<p>Popularity: #366 on the Most Watch Movies in Life </p>
+	</div>
+
+<div id="boxoffice">
+		<img id="ticket" src= "Box Office Icon.png"/ width="200">
+		<h4>Box Office</h4>
+		<p>
+	    <dl id="boxlist">
+            <dt>Budget:</dt>
+            <dd>- $150,000,000</dd>
+            <dt>Opening Weekend USA:</dt>
+            <dd>- 47,027,395, 1 July 2007</dd>
+            <dt>Gross USA:</dt>
+            <dd>- $206,445,654</dd>
+            <dt>Cumulative Worldwide Gross:</dt>
+            <dd>- $623,726,085</dd>
+        </dl>
+		</p>
+	</div>
+</div>
+
+	<div id="summary">
+		<h2> Ratatoullie The Summary</h2>
+		<p id="summarypara">Ratatouille is a 2007 American computer-animated comedy film produced by Pixar and released by Walt Disney Pictures. It was the eighth film produced by Pixar, and was written and directed by Brad Bird, who took over from Jan Pinkava in 2005, and produced by Brad Lewis, from an original idea from Bird, Pinkava and Jim Capobianco. The title refers to the French dish ratatouille, which is served at the end of the film and also references the animal type of the main character, a rat. The plot follows a rat named Remy, who dreams of becoming a chef and tries to achieve his goal by forming an alliance with a Parisian restaurant's garbage boy.
+		</p>
+	</div>
+
+	<div id="reviews">
+		<h2> Ratatoullie The Reviews</h2>
+
+		<img id="userleft1" src= "usericon.png"/ width="100">
+		
+		<p id="revlft1">This is a film about a rat who becomes a chef in Paris. But it's so much more than that. It's about what a great artist can be, where a great artist can come from, it's about food and how to savour it. 
+		</p>
+		
+		<img id="userleft2" src= "usericon.png"/ width="100">
+		<p>Ratatouille is delightfully unique and funny at the same time, with animation that will have salivating over it, hungry for more. And it's ending is probably one of Pixar's most powerful overall. Simply fantastic. 
+		</p>
+		
+		<img id="userleft3" src= "usericon.png"/ width="100">
+		<p>Pixar's latest installment is a recipe of success. Ratatouille is bold and classy with the flare of European culture. Patton Oswalt's adventurous critter spices a flamboyant film with an interesting plot and dynamic delivery. 4/5 
+		</p>
+
+		<img id="userright1" src= "usericon.png"/ width="100">
+		<p>Has great vocal performances throughout and is about a character figuring out where they belong and finally being accepted there. I love it!
+		</p>
+
+		<img id="userright2" src= "usericon.png"/ width="100">
+		<p>This movie is as fresh as its rating. 13 years ago and it doesn't feel dated. a truly inspired film with great atmosphere, voice acting, and of the most entertaining movies I've ever seen. Chef's Kiss.
+		</p>
+
+		<img id="userright3" src= "usericon.png"/ width="100">
+		<p>Ratatouille Is A tasty masterpiece that is about a rat that cooks amazing food with Patton Oswalt and Brad Bird in it and also Brad Garnett, Lou Romano and Janeane Garofolo. And it is one of my favorite animated movie and it is tasty from Pixar. 10/10
+		</p>
+	</div>
+
+	<div id="trailer">
+	    <h2> Ratatoullie The Trailer</h2>
+	    <iframe width="720" height="405" src="https://www.youtube.com/embed/PeFGdSrFTUw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p>Enter comments and thoughts about Ratatouille here:</p>
+     <input type="text" id="amount" size="100" /><br><br> 
+     <button onclick="submitcomment()">SUBMIT</button>
+
+
+
+
+<script>
+	var myName=prompt("Please enter the name of the mouse cook in Ratatouille");
+	if(myName= Remy){
+	alert("Welcome " + myName);
+}
+    else {
+    	alert("Please think again!");
+    }
+////submission
+    var submitButton = document.getElementById("submit")
+    submitButton.addEventListener('click', submitcomment)
+////funcation
+
+function submitcomment() {
+  alert("Congratulations! Your comments and thoughts have been successfully submitted.");
+}
+
+
+
+
+
+
+	
+</script>
+
+
+</body>
+</html>

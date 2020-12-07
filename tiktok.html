@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Tik Tok</title>
+   </head>
+   <body>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <div class="header">
+         <h1>Musical Tik Toks</h1>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tiktok.html">Tik Toks</a></li>
+            <li><a href="movie.html">Movie</a></li>
+            <li><a href="application.html">Apply Here</a></li>
+         </ul>
+      </div>
+      <h1 id="header"> Ratatoullie has taken Tik Tok by storm!</h1>
+
+      <h2> Here are some of the top auditions</h2>
+      <iframe class="left"  height="300" src="https://www.youtube.com/embed/X1yQjhjrQW8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <iframe class="middle" height="300" src="https://www.youtube.com/embed/26qsRmV6Jwg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+      <iframe class="right" height="300" src="https://www.youtube.com/embed/1QYyacF3caU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h2> Here are some of the best cooking tik toks </h2>
+      <iframe  class="left" width="300" height="300" src="https://www.youtube.com/embed/PTpO8NsgihU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <iframe class="middle" width="300" height="300" src="https://www.youtube.com/embed/kbVHnrnXZjU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <iframe class="right" width="300" height="300" src="https://www.youtube.com/embed/CqwPALTWefc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h2> Here are some of the best dance vidoes on tik tok </h2>
+      <iframe class="left" width="300" height="300" src="https://www.youtube.com/embed/wmYghtD7hlI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <iframe class="middle" width="300" height="300" src="https://www.youtube.com/embed/CEOdA97GZFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+      <iframe class="right" width="300" height="300" src="https://www.youtube.com/embed/H6yiq1XCFe8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <h2> Add comments about the tik toks here!</h2>
+
+      <div class="info">
+      <label for="example">Enter Text
+      </label>
+      <input id="example" type="text"
+             name="Ntext" size="20">
+      <input id="sent" type="submit"  
+             value="Send"> 
+  </div>
+    <p id="para">      
+    </p>
+
+    <img id="footer" src="commentpic.jpg">
+    <img class="footer2" src="carrot.jpg">
+
+
+
+      <script>
+         var a1=document.querySelector("#header");
+         
+           a1.addEventListener("mouseover", changeText1);
+           a1.addEventListener("mouseout", changeTextBack1);
+         
+           function changeText1(){
+             a1.textContent="All Things Ratatoullie Musical Here!";
+           }
+           function changeTextBack1(){
+             a1.textContent="Ratatoullie has taken Tik Tok by storm";
+           }
+
+           window.onclick = function(e)
+    {   var id =  e.target.id;   
+       if (id === 'sent')  
+       { var txtbox = document.getElementById('example');  
+         var txt = txtbox.value;
+         $( "#para" ).append( txt + '<br>');
+         $( txtbox ).val('');  
+       }
+    }
+
+
+
+         
+         
+         
+         
+         
+         
+      </script>
+   </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Landing Page</title>
+   </head>
+   <body>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <div class="header">
+         <h1>Ratatoullie</h1>
+         <ul>
+            <li><a href="landingpage.html">Home</a></li>
+            <li><a href="tiktok.html">Tik Toks</a></li>
+            <li><a href="movie.html">Movie</a></li>
+            <li><a href="application.html">Apply Here</a></li>
+         </ul>
+      </div>
+      <h1>The Cast</h1>
+      <table>
+         <tr>
+            <td>
+               <p>Ray Romano as Alfredo Linguini</p>
+               <img src="RayAsAlfredo.jpg" alt="Ray Romano and Alfredo Lingquini side by side." class="cast">
+            </td>
+            <td>
+               <p>Ray Romano as Alfredo Linguini</p>
+               <img src="AubreyAsColette.jpg" alt="Aubrey Plaza and Colette Tatou side by side." class="cast">
+            </td>
+         </tr>
+         <td>
+            <p>Rainn Wilson as Anton Ego</p>
+            <img src="RainAsAnton.jpg" alt="Rain Wilson and Anton Ego side by side." class="cast">
+         </td>
+         <td>
+            <p>Danny Pudi as Remy</p>
+            <img src="DannyAsRemy.jpg" alt="DannyPudi and Remy side by side." class="cast">
+         </td>
+         <tr>
+         </tr>
+      </table>
+      <br> <br>
+      <h1> Dishes to Make!</h1>
+      <br><br>
+      <iframe id="t1" width="560" height="315" src="https://www.youtube.com/embed/ZiePawCzt7Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p><a href="https://ohmy.disney.com/food/2013/09/22/fall-food-inspired-by-ratatouille//">Ratatouille inspired foods!</a></p>
+      <table>
+         <tr>
+            <th>Release Information</th>
+         </tr>
+         <tr>
+            <td>Directed by</td>
+            <td>Brad Bird</td>
+         </tr>
+         <tr>
+            <td>Music by</td>
+            <td>Michael Giacchino</td>
+         </tr>
+         <tr>
+            <td>Release date</td>
+            <td>June 22, 2007</td>
+         </tr>
+         <tr>
+            <td>Running time</td>
+            <td>111 minutes</td>
+         </tr>
+         <tr>
+            <td>Budget</td>
+            <td>$150 Millon</td>
+         </tr>
+         <tr>
+            <td>Box Office</td>
+            <td>$620.7 Millon</td>
+         </tr>
+      </table>
+      <h1>Sign Up for Updates</h1>
+      <form>Email<input type= "email" name="em" > <input type="submit" value="Submit">
+      </form>
+      <br><br><br><br>
+      <script>
+         var frmvalidator = new Validator(“contactform”); frmvalidator.addValidation(“name”,”req”,”Please provide your name”); frmvalidator.addValidation(“email”,”req”,”Please provide your email”); frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”); 
+      </script>
+   </body>
+</html>

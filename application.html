@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Apply Here</title>
+   </head>
+   <body>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <div class="header">
+         <h1>Interested In Applying to the Ratatoullie Musical?</h1>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tiktok.html">Tik Toks</a></li>
+            <li><a href="movie.html">Movie</a></li>
+            <li><a href="application.html">Apply Here</a></li>
+         </ul>
+      </div>
+      <br><br><br>
+      <center>
+      <table bgcolor="white" cellpadding="12" border="1">
+         <tr>
+            <td colspan="2">
+               <center>
+                  <h1><b>Ratatoullie Musical LogIn to Apply</b>
+                  </h1>
+               </center>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <h1><b>UserID:</b></h1>
+            </td>
+            <td>
+               <form name="login">
+                  <input
+                     name="id" type="text">
+            </td>
+         </tr>
+         <tr><td><h1><b>Password:</b></h1></td><td><input name="pass"
+            type="password"></td></tr>
+         <tr><td><center><input type="button" value="Login"
+            onClick="pasuser(this.form)"></center></td><td><center><br><input
+            type="Reset"></form></td></tr>
+      </table>
+      </center> 
+
+      <script>
+         function pasuser(form) {
+         if (form.id.value=="AnnaLang") { 
+         if (form.pass.value=="abc123") {              
+         location="apply.html" 
+         } else {
+         alert("Invalid Password")
+         }
+         } else {  alert("Invalid UserID")
+         }
+         }
+         
+      </script>
+   </body>
+</html>

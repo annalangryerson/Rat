@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Apply Here</title>
+   </head>
+   <body>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <div class="header">
+         <h1>Interested In Applying to the Ratatoullie Musical?</h1>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tiktok.html">Tik Toks</a></li>
+            <li><a href="movie.html">Movie</a></li>
+            <li><a href="application.html">Apply Here</a></li>
+         </ul>
+      </div>
+      <h2> Tik Tok Ratatoullie Musical </h2>
+      <h2>
+         How to Apply
+      </h2>
+      <p>
+         We believe in the youth of today, which is why we are asking the global community to apply to the Ratatoullie Musical. No matter where you are located we want to see your talent. Here at Big Fry Media we want to develop, invest and empower indiviuals. 
+      </p>
+      <img src="rat01.jpg" alt="rat playing flute"/>
+      <p>
+         In order to apply please upload your resume below, please ensure to include your social media links to ensure we can check out your content. You do not have to submit a resume, you can just apply by uploading content to TikTok using the Hashtag #ratatouilleapply8002. Uploading a resume will increase your chance of being cast. 
+      </p>
+      <form name="uploadForm">
+         <div>
+            <input id="uploadInput" type="file" name="myFiles" multiple>
+            selected files: <span id="fileNum">0</span>;
+            total size: <span id="fileSize">0</span>
+         </div>
+         <div><input type="submit" value="Send file"></div>
+      </form>
+      <br><br>
+      <script>
+         function updateSize() {
+           let nBytes = 0,
+               oFiles = this.files,
+               nFiles = oFiles.length;
+           for (let nFileId = 0; nFileId < nFiles; nFileId++) {
+             nBytes += oFiles[nFileId].size;
+           }
+           let sOutput = nBytes + " bytes";
+           // optional code for multiples approximation
+           const aMultiples = ["KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"];
+           for (nMultiple = 0, nApprox = nBytes / 1024; nApprox > 1; nApprox /= 1024, nMultiple++) {
+             sOutput = nApprox.toFixed(3) + " " + aMultiples[nMultiple] + " (" + nBytes + " bytes)";
+           }
+           // end of optional code
+           document.getElementById("fileNum").innerHTML = nFiles;
+           document.getElementById("fileSize").innerHTML = sOutput;
+         }
+         
+         document.getElementById("uploadInput").addEventListener("change", updateSize, false);
+      </script>
+   </body>
+</html>

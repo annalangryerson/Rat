@@ -1,0 +1,87 @@
+.header {
+  padding: 60px;
+  text-align: center;
+  background: white;
+  color: white;
+  font-size: 30px;
+  width: 100%;
+  background-image: url('headerbg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: 8px -310px;
+}
+
+body{
+ font-family: arial, helvetica, san-serif; 
+}
+.cast{
+  height: 300px;
+  width: 300px;
+  border: solid black 3px;
+}
+
+.right{
+  float: right;
+}
+
+.middle{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.info {
+  margin: auto;
+  text-align: center;
+}
+.footer2 {
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+table{
+  margin: auto;
+}
+
+h1{
+  text-align: center; 
+}
+
+h2{
+  text-align: center;
+}
+
+li {
+  float: left;
+  display: inline;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+#t1{
+  float: left;
+  border: solid black 3px;
+}
+
+form{
+  text-align: center;
+}
+
+
+#poster {
+  float: left;
+}
+#head { 
+float: right; }
+
+
+#summary {
+  clear: both;
+}
