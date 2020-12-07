@@ -8,7 +8,7 @@
       <div class="header">
          <h1>Musical Tik Toks</h1>
          <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="landingpage.html">Home</a></li>
             <li><a href="tiktok.html">Tik Toks</a></li>
             <li><a href="movie.html">Movie</a></li>
             <li><a href="application.html">Apply Here</a></li>
@@ -40,19 +40,11 @@
       <iframe class="right" width="300" height="300" src="https://www.youtube.com/embed/H6yiq1XCFe8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       <h2> Add comments about the tik toks here!</h2>
+      <input type="text" id="info" size="100" /><br><br> 
+     <button onclick="submitcomment()">SUBMIT</button>
 
-      <div class="info">
-      <label for="example">Enter Text
-      </label>
-      <input id="example" type="text"
-             name="Ntext" size="20">
-      <input id="sent" type="submit"  
-             value="Send"> 
-  </div>
-    <p id="para">      
-    </p>
 
-    <img id="footer" src="commentpic.jpg">
+    <img class="footer" src="commentpic.jpg">
     <img class="footer2" src="carrot.jpg">
 
 
@@ -70,24 +62,15 @@
              a1.textContent="Ratatoullie has taken Tik Tok by storm";
            }
 
-           window.onclick = function(e)
-    {   var id =  e.target.id;   
-       if (id === 'sent')  
-       { var txtbox = document.getElementById('example');  
-         var txt = txtbox.value;
-         $( "#para" ).append( txt + '<br>');
-         $( txtbox ).val('');  
-       }
-    }
 
+           var submitButton = document.getElementById("submit")
+           submitButton.addEventListener('click', submitcomment)
 
+        function submitcomment(){
+            alert("Your comment has been submitted!")
+           }
 
-         
-         
-         
-         
-         
-         
+    
       </script>
    </body>
 </html>
